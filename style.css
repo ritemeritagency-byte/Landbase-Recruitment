@@ -482,6 +482,42 @@ body {
   background: #189447;
 }
 
+.job-detail-link {
+  margin-top: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.job-detail-link::after {
+  content: "\2192";
+  font-size: 0.9rem;
+}
+
+.job-detail-link:hover {
+  text-decoration: underline;
+}
+
+.jobs-cta-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.jobs-main-apply-btn {
+  min-width: min(100%, 330px);
+  background: #1ea952;
+  box-shadow: 0 10px 24px rgba(30, 169, 82, 0.22);
+}
+
+.jobs-main-apply-btn:hover {
+  background: #189447;
+}
+
 .btn-wa-icon {
   width: 20px;
   height: 20px;
@@ -1037,6 +1073,10 @@ body {
 
   .job-grid {
     grid-template-columns: 1fr;
+  }
+
+  .jobs-main-apply-btn {
+    width: 100%;
   }
 
   .testimonial-grid {
